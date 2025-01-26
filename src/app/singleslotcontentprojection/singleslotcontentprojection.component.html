@@ -13,6 +13,9 @@
 
  <!-- With content projection -->
  <div>
-    <label>{{questionNumber}}. {{question}}?</label>
+    <label>SINGLE SLOT PROJECTION</label>
     <ng-content select=".single-slot"></ng-content>
+  </div>
+  <div class="alert alert-{{type}}">
+    <ng-content></ng-content>
   </div>

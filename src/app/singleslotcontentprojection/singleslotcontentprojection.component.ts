@@ -9,6 +9,7 @@ export class SingleslotcontentprojectionComponent implements OnInit {
 
   @Input() question: string;
   @Input() questionNumber?: number;
+  @Input() type: string;
   constructor() { }
 
   ngOnInit(): void {

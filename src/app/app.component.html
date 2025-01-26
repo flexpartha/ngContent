@@ -2,36 +2,30 @@
   <strong class="app">Senior Developer</strong>
   <strong class="app1">Experience : 5 years</strong>
 </app-reusable-component>
-<hr>
+<hr />
 <app-reusable-component>
   <strong class="app">Application Developer</strong>
   <strong class="app1">Experience : 2 years</strong>
 </app-reusable-component>
-<hr>
+<hr />
 <app-reusable-component>
   <strong class="app">Sr.Net Application Developer</strong>
   <strong class="app1">Experience : 12 years</strong>
 </app-reusable-component>
-<br>
-<hr>
+<br />
+<hr />
 <h3>Single Slot Content Projection</h3>
-<app-singleslotcontentprojection [questionNumber]="1"
-[question]="'What is your name'">
-    <div class="single-slot">
-      <input type="text" name="single-standard-name" id="single-standard-name">
-    </div>
+<app-singleslotcontentprojection>
+  <p class="single-slot">INSERT CONTENT DYNAMICALLY</p>
 </app-singleslotcontentprojection>
-<br>
-<app-singleslotcontentprojection [questionNumber]="2"
-[question]="'What is your surname'">
-    <div class="single-slot">
-      <input type="text" name="single-standard-name" id="single-standard-name">
-    </div>
+<br />
+<app-singleslotcontentprojection type="success">
+  <p>Success!</p>
 </app-singleslotcontentprojection>
-<br>
-<app-singleslotcontentprojection [questionNumber]="3"
-[question]="'What is birth year'">
-    <div class="single-slot">
-      <input type="number" name="single-standard-name" id="single-standard-name">
-    </div>
-</app-singleslotcontentprojection>
+<br />
+<br />
+<app-multislotcontentprojection>
+  <p heading>Content Projection in Angular</p>
+  <p>Projected content!</p>
+  <p class="select"><strong>Well done go for outings...</strong></p>
+</app-multislotcontentprojection>
